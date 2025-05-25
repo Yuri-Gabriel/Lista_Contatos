@@ -91,7 +91,7 @@ span {
     cursor: pointer;
 }
 
-section {
+section#modal_container {
     position: absolute;
     top: 0;
     left: 0;
@@ -99,4 +99,77 @@ section {
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
+
+div#modal {
+    width: 500px;
+    height: 400px;
+    background-color: #686868;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+div#exit_container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+div#exit_container button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    svg {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+div#form_container, form {
+    height: 325px;
+}
+
+div#form div.input_container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+    label {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    input {
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+    }
+}
+
+div#label_container {
+    width: 100px;
+}
+
+div#submit_container {
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 1.2em;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+

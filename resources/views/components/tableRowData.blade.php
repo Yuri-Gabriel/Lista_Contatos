@@ -3,7 +3,6 @@
     'nome',
     'email',
     'telefone',
-    'edit_icon',
     'delete_icon'
 ])
 
@@ -18,9 +17,6 @@
         {{ $telefone }}
     </td>
     <td>
-        <span id="edit_button">
-            {{ $edit_icon }}
-        </span>
         <span id="delete_button">
             {{ $delete_icon }}
         </span>
