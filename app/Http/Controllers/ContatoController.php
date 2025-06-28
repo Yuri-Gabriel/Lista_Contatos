@@ -34,12 +34,11 @@ class ContatoController extends Controller {
 
     }
     public function delete(Request $req): JsonResponse {
-        $email_contato = $req->input('email_contato'); // mais seguro
-
-        $contato = Contato::where('email_contato', $email_contato)->first();
+        $email_contato = $req->input('email_contato');
+        $contato = Contato::where('email_contato', $email_contato);
 
         if ($contato) {
-            $contato->forceDelete();
+            $contato->delete();
             return response()->json(['message' => 'Contato deletado'], Response::HTTP_ACCEPTED);
         }
 
